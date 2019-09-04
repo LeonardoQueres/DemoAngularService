@@ -1,0 +1,11 @@
+<p>criar-cursos works!</p>
+<input type="text" #cursoInput>
+<button (click)="onAddCursos(cursoInput.value)">Adicionar</button>
+
+<ul>
+    <li *ngFor="let item of cursos">
+        {{ item }}
+    </li>
+</ul>
+
+<app-receber-curso-criado></app-receber-curso-criado>
